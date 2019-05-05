@@ -1,5 +1,6 @@
 # bst-traversal
-INT320-Data structures
+
+#INT320-Data structures
 
 You can test BinarySearch traversal in package Weel2
 -TestBinarytree.java
