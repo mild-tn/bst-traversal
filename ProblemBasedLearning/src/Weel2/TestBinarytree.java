@@ -7,24 +7,28 @@ package Weel2;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 /**
  *
  * @author Mild-TN
  */
 public class TestBinarytree {
-  
+
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
     BinarySearchTree<Integer> b = new BinarySearchTree<>();
     System.out.print("Input : ");
     String str = scan.nextLine();
-    String[] number = str.split(" ");//cute white space
-    for (int i = 0; i < number.length; i++) {
-      int n = Integer.parseInt(number[i]);
-      b.insert(n);
+    StringTokenizer st = new StringTokenizer(str, " ");
+    while (st.hasMoreTokens()) {
+      String next = st.nextToken();
+      for (int i = 0; i < next.length(); i++) {
+        int n = Integer.parseInt(next);
+        b.insert(n);
+      }
     }
-
+    
     System.out.print("InOder : ");
     b.inorder();
     System.out.print("\n");
