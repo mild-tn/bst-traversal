@@ -31,11 +31,11 @@ public class BinarySearchTree<E extends Comparable<E>> {
   public BinarySearchTree() {
   }
 
-  public BinarySearchTree(E[] obj) {
-    for (int i = 0; i < obj.length; i++) {
-      add(obj[i]);
-    }
-  }
+//  public BinarySearchTree(E[] obj) {
+//    for (int i = 0; i < obj.length; i++) {
+//      add(obj[i]);
+//    }
+//  }
 
   public int getSize() {
     return size;
